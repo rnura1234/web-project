@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(116, 30, 108);
+    font-family: Arial, sans-serif;
+    font-size: 1.7rem;
+    color: red;
+    
+   
+}
+.container{
+    margin: 40px auto;
+   width: 80%;
+    display: grid;
+    grid-template-columns:repeat(4,100px);
+    grid-template-rows: 150px repeat(5,80px) ;
+    gap: 5px;
+    position: relative;
+
+}
+#result{
+    
+    /* direction: rtl; */
+    font-size: 20px;
+    float: right;
+    resize: none;
+    grid-column: 1/5;
+}
+input{
+    font-weight: bold;
+
+}#equal{
+    grid-row:5/7;
+    grid-column: 4/5;
+}
+#remove{
+    background-image: url('left-arrow-with-a-cross.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+#multiplication{
+    background-image: url('multiply.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+#add{
+    background-image: url('plus-math.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+#equal{
+    background-image: url('equal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#sub{
+    background-image: url('minus-math.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}#percent{
+    background-image: url('percent.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
