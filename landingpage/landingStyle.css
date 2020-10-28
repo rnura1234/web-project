@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.2rem;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: white;
+    background: #333;
+    overflow-x: hidden;
+    
+    
+}
+header{
+    height: 80vh;
+    text-align: center;
+    color: white;
+}
+header .bg-image{
+   position: absolute;
+    background: #333 url('../image/header.png');
+    z-index: -1;
+    opacity: .4;
+    width: 100vw;
+    height: 80vh;
+}
+header h1{
+
+    padding-top: 100px;
+    margin-bottom: 5px;
+}
+header p{
+    
+text-align: center;
+    padding:20px 100px;
+}
+header a{
+    text-decoration: none;
+    padding: 20px 25px;
+    background-color: rgb(85, 80, 80);
+    color: white;
+    
+    
+}
+header a:hover{
+    background-image:linear-gradient(to top right ,rgb(106, 219, 106),rgb(211, 231, 192));
+    color: black;
+
+}
+.section-1{
+    background:#eaeaea;
+  
+    
+    color: #333;
+}
+.section-1 h1{
+    text-align: center;
+    padding-top: 1rem;
+padding-bottom: 20px;
+}
+.section-1 p{
+    padding: 30px 80px;
+    column-count: 2;
+    column-gap: 100px;
+    justify-content: left;
+}
+main{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3,280px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+main div{
+    background-color: white;
+    color: #333;
+    transition: transform 1s;
+    
+    
+}main div:hover{
+  
+    box-shadow: 2px 4px 6px white,2px 4px 50px rgba(0, 81, 255, 0.726);
+    transform: scale(1.029,1.0290);
+}
+main div h2,p{
+    text-align:center;
+    padding: 30px;
+}
+
+main div img{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+
+}
+.section-2{
+    padding: 50px 100px;
+    background: #eaeaea;
+    color: #333;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr ;
+
+   
+}
+.section-2 h1{
+    grid-column: 2/3;
+    justify-self: center;
+}.section-2 p{
+    grid-column: 2/3;
+}
+.section-3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.div1{
+    background-color: rgba(123, 190, 207, 0.616);
+    text-align: center;
+   
+}
+.div1 h1,.div2 h1{
+    padding-top:20px;
+    text-align: center;
+
+}
+footer{
+    padding: 20px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+footer span{
+    color: blue;
+}
+
+
+
+/*           breakpoint at 760px                 */
+
+
+
+
+
+
+@media only screen and (max-width: 760px) {
+   header{
+       font-size: 1.1rem;
+   }
+   .section-1{
+       background-color: rgb(255, 255, 255);
+   }
+   .section-1 h1{
+    color:rgb(177, 133, 13);
+   }
+   .section-1 p{
+    color: rgb(32, 24, 39);
+    text-align: justify;
+   }
+   .main-item h2{
+       color:rgb(177, 133, 13);
+
+   }
+   .main-item p{
+       color: #333;
+       text-align: justify;
+   }
+    .section-1 p{
+        column-count: unset;
+    }
+    main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0;
+    padding: 0;
+    margin: 0;
+    
+      
+    }
+    main div{
+        padding: 50px;
+    }
+    .section-2{
+        background-image: linear-gradient(to bottom,rgba(238, 194, 164, 0.87) 50%, rgb(248, 250, 244));
+        padding: 12px;
+        
+        
+    }
+    .section-2 h1{
+        padding: 20px;
+        width: 80vw;
+        color: rgb(177, 133, 13);
+        text-align: start;
+    }
+    
+    .section-2 p{
+        margin: 0;
+        padding: 15px;
+        float: left;
+        color:#333;
+    }
+    .section-3 {
+        
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    
+    
+    
+    footer{
+        display: grid;
+        grid-template-columns:100%;
+       
+
+    }
+
+  }
+  
